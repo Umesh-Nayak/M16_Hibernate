@@ -7,15 +7,17 @@ import com.tns.service.StudentServiceImpl;
 public class Client {
 
 	public static void main(String[] args) {
-		StudentService service=new StudentServiceImpl();
+		//CRUD Operation calling activity
 		Student student=new Student();
-		//CRUD Operation
-		//create
+		StudentService service=new StudentServiceImpl();
+		
+		
+		//create operation
 		student.setID(24);
 		student.setName("Akash");
 		service.addStudent(student);
 		
-		/*//Retreive data-find();
+		/*//Retrieve data-find();
 		student=service.findStudentById(21);
 		System.out.println("ID: "+student.getID());
 		System.out.println("ID: "+student.getName());*/
