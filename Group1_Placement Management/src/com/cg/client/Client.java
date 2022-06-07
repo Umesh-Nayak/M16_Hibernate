@@ -100,9 +100,9 @@ public class Client {
 		
 		User u=new User();
 		
-		u.setName("Ankita@gmail.com");
+		u.setName("Rohit@gmail.com");
 		u.setType("Student");
-		u.setPassword("Ankita#123");
+		u.setPassword("Rohit#123");
 		
 		IUserService user=new UserServiceImpl();
 		User u2 = user.addNewUser(u);
